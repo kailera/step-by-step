@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px; /* Adicionando uma pequena margem nas laterais */
+}
+
+.steps-container {
+    flex: 2; /* 67% do espaço disponível */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+}
+
+.steps-container.active {
+    display: block;
+}
+
+.activity-list {
+    flex: 1; /* 33% do espaço disponível */
+    display: flex;
+    flex-direction: column;
+}
+
+.activity {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
