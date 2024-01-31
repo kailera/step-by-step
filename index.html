@@ -1,33 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step-By-Step</title>
     <link rel="stylesheet" href="styles.css" />
-    <title>Step-by-Step App</title>
   </head>
   <body>
     <div class="wrapper">
-      <div class="steps-container">
-        <h2 id="activity-title"></h2>
-        <ul id="step-list"></ul>
-      </div>
-      <!-- Atualize a estrutura da atividade-list para incluir títulos e passos -->
-      <div class="activity-list">
-        <div
-          class="activity"
-          onclick="showSteps( 'Compras', ['Leite', 'Arroz', 'Comida'])"
-        >
-          Compras
+      <div class="show-steps">
+        <div class="card">
+          <div
+            class="card-color"
+            id="checkboxDiv"
+            onclick="toogleCheckbox()"
+          ></div>
+          <div class="card-content">
+            <h2>Create a new content</h2>
+          </div>
         </div>
-        <div
-          class="activity"
-          onclick="showSteps('Cozinhar', ['Preparar ingredientes', 'Cozinhar', 'Servir'])"
-        >
-          Cozinhar
-        </div>
-        <!-- Adicione mais atividades conforme necessário -->
       </div>
+      <div class="show-activities"></div>
     </div>
     <script src="script.js"></script>
   </body>
